@@ -1,213 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a responsive product landing page.">    <title>Andrei Voinea &ndash; vandrw</title>    
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-    
-    <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-old-ie-min.css">
-    <![endif]-->
-    <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css">
-    <!--<![endif]-->
-    
-    <script src="https://kit.fontawesome.com/b30a52d5ca.js" crossorigin="anonymous"></script>
 
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="css/layouts/portf.css">
-        <!--<![endif]-->
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Andrei Voinea</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="dependencies/jquery-3.5.1.min.js"></script>
+  <script src="dependencies/load.js"></script>
+  
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 <body>
 
-<div class="header">
-    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        <a class="pure-menu-heading" href="">vandrw.</a>
+  <!-- Video Background
+   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <div class="video-container">
+    <video autoplay loop muted>
+      <source src="videos/synth480.mp4" type="video/webm">
+    </video>
+  </div> -->
 
-        <ul class="pure-menu-list">
-            <li class="pure-menu-item">
-                <a href="https://github.com/vandrw" class="pure-menu-link">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
+  
+  <div class="background">
+    <iframe allowtransparence="true" width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/lsVSRt?gui=false&t=10&paused=false&muted=false" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>
+  </div>
+  
+  <div class="background" id="splashscreen"></div>
+  <div class="color-overlay"></div>
 
-            <li class="pure-menu-item">
-                <a href="https://www.linkedin.com/in/vandrw/" class="pure-menu-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </li>
-        </ul>
+  <!-- Page Wrapper
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  <img class="wrapper" src="images/frame.png">
+  
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    
+    <div class="row">
+      <h4 class="title">vandrw</h4>
     </div>
-</div>
-
-<!-- <section>
-    <div class="splash-container" style="background-image: url('img/dna.png');">
-        <div class="splash">
-            <h1 class="splash-head">Hi! I am <br> Andrew.</h1>
-            <div class="red-line"></div>
-        </div>
+    
+    <div class="row" style="margin-top: 40%;">
+      <div class="content">
+        <h4>Almost before we knew it,</h4>
+        <h4> we had left the ground.</h4>
+      </div>
     </div>
-</section>
+  </div>
 
-<div class="content-wrapper" style="top: 100%; height: 100%;">
-    <section>
-        <div class="content">
-            <h2 class="content-head is-center">About</h2>
-    
-            <div class="pure-g">
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-    
-                    <h3 class="content-subhead">
-                        <i class="fa fa-rocket"></i>
-                        Get Started Quickly
-                    </h3>
-                    <p>
-                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <h3 class="content-subhead">
-                        <i class="fa fa-mobile"></i>
-                        Responsive Layouts
-                    </h3>
-                    <p>
-                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <h3 class="content-subhead">
-                        <i class="fa fa-th-large"></i>
-                        Modular
-                    </h3>
-                    <p>
-                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <h3 class="content-subhead">
-                        <i class="fa fa-check-square-o"></i>
-                        Plays Nice
-                    </h3>
-                    <p>
-                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="content" >
-            <div class="ribbon l-box-lrg pure-g">
-                <div class="l-box-lrg is-center pure-u-1 pure-u-md-1-2 pure-u-lg-2-5">
-                    <img width="300" alt="File Icons" class="pure-img-responsive" src="img/common/file-icons.png">
-                </div>
-                <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-5">
-        
-                    <h2 class="content-head content-head-ribbon">Studies</h2>
-        
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat. Duis aute irure dolor.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="content" style="background-image: url('img/common/blocks.jpg');">
-            <h2 class="content-head is-center">Projects</h2>
-    
-            <div class="pure-g">
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-    
-                    <h3 class="content-subhead">
-                        <i class="fa fa-rocket"></i>
-                        Get Started Quickly
-                    </h3>
-                    <p>
-                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <h3 class="content-subhead">
-                        <i class="fa fa-mobile"></i>
-                        Responsive Layouts
-                    </h3>
-                    <p>
-                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <h3 class="content-subhead">
-                        <i class="fa fa-th-large"></i>
-                        Modular
-                    </h3>
-                    <p>
-                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-                <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                    <h3 class="content-subhead">
-                        <i class="fa fa-check-square-o"></i>
-                        Plays Nice
-                    </h3>
-                    <p>
-                        Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="content" style="background-image: url('img/common/desk.jpg');">
-            <h2 class="content-head is-center">Contact me</h2>
-        
-            <div class="pure-g">
-                <div class="l-box-lrg pure-u-1 pure-u-md-2-5">
-                    <form class="pure-form pure-form-stacked">
-                        <fieldset>
-        
-                            <label for="name">Your Name</label>
-                            <input id="name" type="text" placeholder="Your Name">
-        
-        
-                            <label for="email">Your Email</label>
-                            <input id="email" type="email" placeholder="Your Email">
-        
-                            <label for="password">Your Password</label>
-                            <input id="password" type="password" placeholder="Your Password">
-        
-                            <button type="submit" class="pure-button">Sign Up</button>
-                        </fieldset>
-                    </form>
-                </div>
-        
-                <div class="l-box-lrg pure-u-1 pure-u-md-3-5">
-                    <h4>Contact Us</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                        consequat.
-                    </p>
-        
-                    <h4>More Information</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                </div>
-            </div>
-        
-        </div>   
-    </section> -->
-</div>
-
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>

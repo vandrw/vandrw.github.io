@@ -1,7 +1,5 @@
 # Webpage in progress
 
 ## Using
-* Pure CSS
-* FontAwesome?
-* [this script](https://codepen.io/igstudio/pen/pbYOab)
-* more to come
+* [Skeleton](http://getskeleton.com/)
+* [ShaderToy](https://www.shadertoy.com/)

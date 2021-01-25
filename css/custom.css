@@ -22,11 +22,12 @@
 }
 
 .title {
-    font-family: 'Yusei', Arial, sans-serif;
+    font-family: 'Never-Say-Die', 'Yusei', Arial, sans-serif;
     margin-top: 2em;
     text-align: center;
     font-weight: normal;
     font-style: normal;
+    letter-spacing: 0.1em !important;
     color: white;
 }
 
